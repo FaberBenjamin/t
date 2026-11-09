@@ -208,6 +208,53 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
   .wire,.threshold{stroke-dashoffset:0;animation:none!important}.wire.maybe{opacity:1}
   #controls,#progress,#notes,#overview,#hint,.notes{display:none!important}
 }
+/* ---------- Added: terrorism chapter slides ---------- */
+.t-foot{position:absolute;left:80px;right:80px;bottom:40px;display:flex;justify-content:space-between;font-size:15px;color:var(--muted)}
+.dark .t-foot{color:#8796A6}
+.t h2{margin-bottom:18px;max-width:20ch}
+.t .lede{font-size:23px;max-width:none}
+.t-tl{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:38px}
+.t-tl div{border-top:3px solid var(--amber);padding-top:16px}
+.t-tl b{display:block;font-family:var(--serif);font-weight:500;font-size:36px;color:#F3C677;margin-bottom:6px}
+.t-tl p{font-size:20px;line-height:1.45;color:#AEBBC8}
+.t-note{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.t-note p{font-size:20px;line-height:1.5;color:#C9D3DD;border-left:2px solid #3A4C60;padding-left:20px}
+.t-note strong{color:#fff;font-weight:600}
+.t-two{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:20px}
+.t-pts{list-style:none}
+.t-pts li{padding:18px 0;border-bottom:1px solid var(--line)}
+.t-pts li:first-child{border-top:1px solid var(--line)}
+.t-pts h3{font-size:28px;margin-bottom:6px}
+.t-pts p{font-size:19px;line-height:1.48;color:#3B4654}
+.t-def{background:var(--night);color:#E6EAEE;border-radius:16px;padding:38px 40px;align-self:start}
+.t-def small{font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#8FA0B1}
+.t-def h3{font-size:34px;line-height:1.25;margin:14px 0 22px;font-weight:400}
+.t-def p{font-size:19px;line-height:1.5;color:#AEBBC8}
+.t-tab{width:100%;border-collapse:collapse;margin-top:16px}
+.t-tab th{font-family:var(--serif);font-weight:500;font-size:30px;text-align:left;padding:0 20px 14px}
+.t-tab th:first-child{width:190px}
+.t-tab td{font-size:19px;line-height:1.42;padding:15px 20px;border-top:1px solid var(--line);vertical-align:top;color:#3B4654}
+.t-tab td:first-child{font-weight:600;color:var(--ink);font-size:17px}
+.t-tab tr td:nth-child(2){background:rgba(43,122,116,.08)}
+.t-tab tr td:nth-child(3){background:rgba(185,67,58,.08)}
+.t-fine{margin-top:16px;font-size:17px;color:var(--muted);line-height:1.45;max-width:90ch}
+.t-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px;margin-top:22px}
+.t-card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c,var(--teal));border-radius:12px;padding:24px 26px}
+.t-card h3{font-size:28px;margin-bottom:10px}
+.t-card p{font-size:18.5px;line-height:1.5;color:#3B4654}
+.dark .t-card{background:rgba(255,255,255,.05);border-color:#2C3F55}
+.dark .t-card p{color:#AEBBC8}
+.t-facts{list-style:none}
+.t-facts li{font-size:20px;line-height:1.48;color:#C9D3DD;padding:13px 0;border-bottom:1px solid #2C3F55}
+.t-facts li:first-child{border-top:1px solid #2C3F55}
+.t-facts b{color:#F3C677;font-weight:600}
+.t-q{position:absolute;left:80px;right:80px;bottom:92px;background:var(--night);color:#E6EAEE;border-radius:14px;padding:20px 30px;font-size:20px;line-height:1.45}
+.t-q b{font-family:var(--serif);font-weight:500;font-size:22px;margin-right:12px;color:#F3C677}
+.t-voc{display:grid;grid-template-columns:repeat(3,1fr);gap:0 44px;margin-top:20px}
+.t-voc div{padding:13px 0;border-bottom:1px solid var(--line)}
+.t-voc b{font-family:var(--serif);font-weight:500;font-size:25px;display:block;margin-bottom:2px}
+.t-voc span{font-size:16.5px;line-height:1.4;color:#3B4654}
+
 .notes{display:none}
 </style>
 </head>
@@ -217,8 +264,91 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
 <main id="viewport">
 <div id="stage" role="region" aria-roledescription="slideshow" aria-label="Protest, political violence and terrorism">
 
+<!-- ===== Added: terrorism summary 1-5 ===== -->
+<section class="slide dark t" aria-roledescription="slide" aria-label="1 of 11">
+  <p class="kicker r" style="--d:.05s">Chapter summary · Terrorism (1 of 5)</p>
+  <h2 class="r" style="--d:.12s">11 September 2001 and a new security environment</h2>
+  <p class="lede r" style="--d:.3s">Hijacked planes struck the World Trade Center and the Pentagon, and a fourth crashed in Pennsylvania. The targets were chosen to hit the symbolic heart of American economic, military and political power.</p>
+  <div class="t-tl">
+    <div class="r" style="--d:.5s"><b>Oct 2002</b><p>Bali nightclub bombing: over 200 dead, many of them young tourists.</p></div>
+    <div class="r" style="--d:.62s"><b>Mar 2004</b><p>Madrid rush-hour train bombs kill around 200 commuters.</p></div>
+    <div class="r" style="--d:.74s"><b>Jul 2005</b><p>Coordinated blasts on three Underground trains and a bus kill 52 in London.</p></div>
+    <div class="r" style="--d:.86s"><b>Oct 2001</b><p>First major military step in President Bush’s “war on terror”: the attack on Afghanistan.</p></div>
+  </div>
+  <div class="t-note">
+    <p class="r" style="--d:1.1s"><strong>Why Afghanistan?</strong> Its Taliban government had often backed al-Qaeda, which carried out 9/11 and trained many members there.</p>
+    <p class="r" style="--d:1.25s"><strong>Giddens’s point:</strong> after 9/11 a different form of terrorism, potentially deadlier than before, became possible.</p>
+  </div>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>1 / 11</span></div>
+  <aside class="notes"><p>Open with the events, then move to the concept. Giddens uses the attacks to show that terrorism after 2001 operates in a new security environment.</p><p>Note the symbolic choice of targets: they were meant to show weakness at the centre of US power.</p></aside>
+</section>
+<section class="slide  t" aria-roledescription="slide" aria-label="2 of 11">
+  <p class="kicker r" style="--d:.05s">Terrorism (2 of 5)</p>
+  <h2 class="r" style="--d:.12s">What is terrorism?</h2>
+  <div class="t-two">
+    <ul class="t-pts">
+      <li class="r" style="--d:.3s"><h3>Old practice, new word</h3><p>“Terror” dates from the French Revolution of 1789 and was coined by its opponents. Terrorizing civilians is much older, as when conquerors razed whole cities.</p></li>
+      <li class="r" style="--d:.45s"><h3>Shifting moral judgements</h3><p>“One person’s terrorist is another’s freedom fighter.” Nelson Mandela was once reviled as a terrorist and is now widely revered. A useful concept must be freed from such shifting valuations.</p></li>
+      <li class="r" style="--d:.6s"><h3>Can states be terrorists?</h3><p>States have killed far more civilians (Dresden, 1945, is a debated case). Giddens still restricts the term to groups outside the state, otherwise it blurs into war.</p></li>
+    </ul>
+    <div class="t-def r" style="--d:.5s">
+      <small>Working definition (Panyarachun et al. 2004)</small>
+      <h3>Action by a non-state organization meant to kill or seriously harm civilians or non-combatants.</h3>
+      <p>Its purpose, by nature or context, is to intimidate a population or to compel a government or international organization to act or refrain from acting.</p>
+      <p style="margin-top:16px;color:#F3C677">In short: attacks on civilians designed to change a government’s policy or damage its standing in the world.</p>
+    </div>
+  </div>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>2 / 11</span></div>
+  <aside class="notes"><p>Social scientists disagree about whether “terrorism” can be defined objectively. Giddens accepts the difficulty but argues a neutral definition is possible if state violence is treated separately.</p></aside>
+</section>
+<section class="slide  t" aria-roledescription="slide" aria-label="3 of 11">
+  <p class="kicker r" style="--d:.05s">Terrorism (3 of 5)</p>
+  <h2 class="r" style="--d:.12s">Old and new terrorism</h2>
+  <table class="t-tab r" style="--d:.3s">
+    <tr><th></th><th>Old-style</th><th>New-style</th></tr>
+    <tr><td>Aims</td><td>Local: create a state where a nation lacks one. Tied to territory and identity.</td><td>Global: restructure world society, e.g. rebuild Islamic dominance across large regions.</td></tr>
+    <tr><td>Organization</td><td>Local groups, though they may get funds, arms or backing from abroad.</td><td>Decentralized global network of autonomous cells, resembling an NGO.</td></tr>
+    <tr><td>Means</td><td>Relatively limited violence, matching limited aims.</td><td>Far more ruthless; explicitly seeks to kill as many as possible.</td></tr>
+    <tr><td>Examples</td><td>IRA (Northern Ireland), ETA (Basque Country)</td><td>Al-Qaeda and similar groups</td></tr>
+    <tr><td>Roots</td><td>Rise of nationalism and nations without states</td><td>Globalization and modern communications</td></tr>
+  </table>
+  <p class="t-fine r fade" style="--d:.9s">Terrorism depends on news travelling fast: the telegraph (late 19th century) made this possible. National identity gives old-style terrorism a strong moral pull, making it hard to defeat. The two types can overlap, as in Chechnya.</p>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>3 / 11</span></div>
+  <aside class="notes"><p>The three differences are scope, organizational structure and means. Old terrorism is largely about nations without states; new terrorism is made possible by communications technology driving globalization.</p></aside>
+</section>
+<section class="slide dark t" aria-roledescription="slide" aria-label="4 of 11">
+  <p class="kicker r" style="--d:.05s">Terrorism (4 of 5)</p>
+  <h2 class="r" style="--d:.12s">Al-Qaeda: a “malign kind of NGO”?</h2>
+  <div class="t-two" style="margin-top:28px">
+    <ul class="t-facts">
+      <li class="r" style="--d:.3s"><b>Origins.</b> “The base”, created in 1989 as Soviet forces left Afghanistan, from Arab volunteers of the 1980s anti-Soviet jihad.</li>
+      <li class="r" style="--d:.42s"><b>Bases.</b> Sudan in the early 1990s, then Afghanistan after 1996 alongside the Taliban. The 2001 US campaign dispersed it.</li>
+      <li class="r" style="--d:.54s"><b>Reach.</b> Estimated cells in around 60 countries and about 20,000 supporters willing to die, mostly semi-autonomous.</li>
+      <li class="r" style="--d:.66s"><b>Idea or organization?</b> Some analysts say the name now covers groups linked mainly by shared aims, ideals and methods.</li>
+    </ul>
+    <div style="display:grid;gap:20px;align-content:start">
+      <div class="t-card r" style="--c:var(--amber);--d:.5s"><h3>Like an NGO (Kaldor)</h3><p>Mission-driven, decentralized, autonomous local cells, supporters in many countries, and quiet links with states (e.g. Libya and Lockerbie).</p></div>
+      <div class="t-card r" style="--c:var(--teal);--d:.7s"><h3>Like a social movement</h3><p>Sutton and Vertigans note loose, transnational networks like environmentalism, but al-Qaeda uses symbolic violence rather than non-violent action.</p></div>
+    </div>
+  </div>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>4 / 11</span></div>
+  <aside class="notes"><p>Because authority is spread across cells, the organization stayed strong after its leadership was weakened in 2001. Its members’ moral convictions keep cells functioning.</p></aside>
+</section>
+<section class="slide  t" aria-roledescription="slide" aria-label="5 of 11">
+  <p class="kicker r" style="--d:.05s">Terrorism (5 of 5)</p>
+  <h2 class="r" style="--d:.12s">War on terror or global governance?</h2>
+  <div class="t-cards">
+    <div class="t-card r" style="--c:var(--red);--d:.3s"><h3>Limits of conventional war</h3><p>The 2001 Afghanistan attack destroyed some al-Qaeda networks. But new terrorists differ from nation-states in violence, aims and organization, so decisive victory is unlikely. Some question the very idea of a “war on terrorism”, including the 2003 Iraq war.</p></div>
+    <div class="t-card r" style="--c:var(--amber);--d:.45s"><h3>Hard questions</h3><p>What proof and international support are needed to act against a perceived threat? Which institutions should deal with a global terrorist threat? What of states that have supported terrorism?</p></div>
+    <div class="t-card r" style="--c:var(--teal);--d:.6s"><h3>Cosmopolitan response</h3><p>Kaldor and Beck argue everyone should be treated equally wherever they live. UN, African Union and EU missions hint at this, but mostly act after conflict starts or ends. Prevention is far off.</p></div>
+  </div>
+  <p class="t-q r" style="--d:.95s"><b>Think critically</b>If al-Qaeda is at root an ideology rather than a group of people, can a war on terror ever succeed?</p>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>5 / 11</span></div>
+  <aside class="notes"><p>Giddens concludes that new terrorism challenges the conventional military approach and raises questions about global governance. Cosmopolitan institutions are a long-term project.</p></aside>
+</section>
+
 <!-- ================= 1 ================= -->
-<section class="slide dark s1" aria-roledescription="slide" aria-label="1 of 5">
+<section class="slide dark s1" aria-roledescription="slide" aria-label="6 of 11">
   <p class="kicker r" style="--d:.1s">A sociological explanation</p>
   <h1 class="r" style="--d:.2s">Protest, political violence and terrorism</h1>
   <p class="lede r" style="--d:.45s">Why have some recent protests in France and Europe turned violent, and when does political violence meet the legal definition of terrorism?</p>
@@ -228,7 +358,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
     <div class="r fade" style="--d:1.2s"><span style="background:var(--amber);--d:1.2s"></span>Political violence</div>
     <div class="r fade" style="--d:1.4s"><span style="background:#E6EAEE;--d:1.4s"></span>Terrorism</div>
   </div>
-  <div class="foot r fade" style="--d:1.6s"><span>A short sociological overview, October 2026</span><span>1 / 5</span></div>
+  <div class="foot r fade" style="--d:1.6s"><span>A short sociological overview, October 2026</span><span>6 / 11</span></div>
   <aside class="notes">
     <p>This presentation separates three questions: why people mobilise, why some demonstrations escalate, and what makes an act legally qualify as terrorism.</p>
     <p>The 2026 examples are a current case study, not evidence that all young people or protest movements are violent.</p>
@@ -236,7 +366,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
 </section>
 
 <!-- ================= 2 ================= -->
-<section class="slide s2" aria-roledescription="slide" aria-label="2 of 5">
+<section class="slide s2" aria-roledescription="slide" aria-label="7 of 11">
   <div class="s2-grid">
     <div>
       <h2 class="r" style="--d:.1s">Why can protests escalate?</h2>
@@ -263,7 +393,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
       <p>Reported concerns included living costs, housing, education and corruption. Shared timing does not prove shared organisation.</p>
     </div>
   </div>
-  <div class="foot"><span>Sociology, Europe 2026</span><span>2 / 5</span></div>
+  <div class="foot"><span>Sociology, Europe 2026</span><span>7 / 11</span></div>
   <aside class="notes">
     <p><b>Material insecurity</b> means uncertainty about basic living conditions. <b>Political efficacy</b> is a person’s belief that they can influence political decisions.</p>
     <p><b>Group dynamics</b> can change behaviour during a crowd event, but do not make every participant responsible for violence.</p>
@@ -278,7 +408,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
 </section>
 
 <!-- ================= 3 ================= -->
-<section class="slide s3" aria-roledescription="slide" aria-label="3 of 5">
+<section class="slide s3" aria-roledescription="slide" aria-label="8 of 11">
   <h2 class="r" style="--d:.1s">From protest to terrorism: the legal threshold</h2>
   <p class="lede r" style="--d:.22s">The decisive question is not only whether violence occurred, but what the act was intended to achieve.</p>
 
@@ -307,7 +437,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
     <p class="r" style="--d:2.9s">Designation is a separate legal status assigned to an entity under a particular jurisdiction. <b>A listed organisation and a protest movement are not interchangeable categories.</b></p>
     <p class="r" style="--d:3s"><b>EU legal test:</b> serious intimidation of a population, undue coercion of a government, or serious destabilisation of a country’s fundamental structures.</p>
   </div>
-  <div class="foot"><span>Sociology, Europe 2026</span><span>3 / 5</span></div>
+  <div class="foot"><span>Sociology, Europe 2026</span><span>8 / 11</span></div>
   <aside class="notes">
     <p>A protest may remain peaceful, or violence may occur at its edges. A riot can be a serious offence without satisfying the legal test for terrorism.</p>
     <p>Under the EU framework, terrorist purpose includes seriously intimidating a population, unduly compelling a government, or seriously destabilising fundamental structures.</p>
@@ -321,7 +451,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
 </section>
 
 <!-- ================= 4 ================= -->
-<section class="slide s4" aria-roledescription="slide" aria-label="4 of 5">
+<section class="slide s4" aria-roledescription="slide" aria-label="9 of 11">
   <h2 class="r" style="--d:.1s">Movements, labels and possible exploitation</h2>
   <div class="cols">
     <div class="col r" style="--d:.3s">
@@ -342,7 +472,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
       <p class="verdict">A shared slogan, event or online post alone does not prove membership, coordination or support for terrorism.</p>
     </div>
   </div>
-  <div class="foot"><span>Sociology, Europe 2026</span><span>4 / 5</span></div>
+  <div class="foot"><span>Sociology, Europe 2026</span><span>9 / 11</span></div>
   <aside class="notes">
     <p>Antifa is a broad, decentralised anti-fascist movement rather than one centrally commanded organisation. Individual local groups can have different practices, including confrontational or violent actions, which should be attributed specifically.</p>
     <p>“Free Palestine” is a slogan used by a wide range of people and organisations. The EU lists Hamas and Palestinian Islamic Jihad as terrorist organisations, but that does not make the wider solidarity movement a terrorist organisation.</p>
@@ -357,7 +487,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
 </section>
 
 <!-- ================= 5 ================= -->
-<section class="slide dark s5" aria-roledescription="slide" aria-label="5 of 5">
+<section class="slide dark s5" aria-roledescription="slide" aria-label="10 of 11">
   <p class="kicker r" style="--d:.05s">Conclusion</p>
   <h2 class="r" style="--d:.12s">How should we interpret the violence?</h2>
   <div class="three">
@@ -370,7 +500,7 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
     <b>Key terms</b>
     <span class="chip">social movement</span><span class="chip">collective action</span><span class="chip">grievance</span><span class="chip">political efficacy</span><span class="chip">escalation</span><span class="chip">radicalisation</span><span class="chip">political violence</span>
   </div>
-  <div class="foot"><span>Sociology, Europe 2026</span><span>5 / 5</span></div>
+  <div class="foot"><span>Sociology, Europe 2026</span><span>10 / 11</span></div>
   <aside class="notes">
     <p>Conclude by answering the guiding question directly. Social grievances can explain why people join protests. They cannot by themselves explain every violent act.</p>
     <p>Whether an act is terrorism depends on evidence of the offence and the legally relevant intention. Whether a movement is a terrorist organisation requires separate evidence and a jurisdiction-specific legal determination.</p>
@@ -378,12 +508,21 @@ body.overview-open #overview{opacity:1;visibility:visible;transition:opacity .35
   </aside>
 </section>
 
+<!-- ===== Added: vocabulary ===== -->
+<section class="slide  t" aria-roledescription="slide" aria-label="11 of 11">
+  <p class="kicker r" style="--d:.05s">Terrorism: 15 useful words</p>
+  <h2 class="r" style="--d:.12s">Useful vocabulary</h2>
+  <div class="t-voc"><div class="r" style="--d:0.25s"><b>Terrorism</b><span>Violence by a non-state group against civilians to intimidate or force political change.</span></div><div class="r" style="--d:0.29s"><b>Non-state organization</b><span>A group acting outside the government, to which Giddens limits the term terrorism.</span></div><div class="r" style="--d:0.33s"><b>Non-combatant</b><span>A person not taking part in fighting, such as an ordinary civilian.</span></div><div class="r" style="--d:0.37s"><b>State terrorism</b><span>Terror used by states; debated, and excluded from Giddens’s definition.</span></div><div class="r" style="--d:0.41s"><b>Nation without a state</b><span>A people with a shared identity but no state of its own.</span></div><div class="r" style="--d:0.45s"><b>Nationalism</b><span>Symbols and beliefs giving a sense of belonging to one political community.</span></div><div class="r" style="--d:0.49s"><b>Old-style terrorism</b><span>Local violence aimed at creating a state for a nation.</span></div><div class="r" style="--d:0.53s"><b>New-style terrorism</b><span>Global, network-based and more ruthless terrorism, shaped by globalization.</span></div><div class="r" style="--d:0.57s"><b>Jihad</b><span>Holy struggle or war; the term al-Qaeda’s founders applied to new campaigns.</span></div><div class="r" style="--d:0.61s"><b>Cell</b><span>A small, semi-autonomous local unit within a terrorist network.</span></div><div class="r" style="--d:0.65s"><b>Network</b><span>A decentralized web of linked groups with no strong central command.</span></div><div class="r" style="--d:0.69s"><b>NGO</b><span>Non-governmental organization such as Oxfam; Kaldor compares al-Qaeda’s structure to one.</span></div><div class="r" style="--d:0.73s"><b>New social movements</b><span>Loose, transnational movements of the 1970s–80s, e.g. environmentalism.</span></div><div class="r" style="--d:0.77s"><b>Cosmopolitanism</b><span>The view that all individuals deserve equal treatment wherever they live.</span></div><div class="r" style="--d:0.81s"><b>Global governance</b><span>International institutions working to manage worldwide problems like terrorism.</span></div></div>
+  <div class="t-foot"><span>Giddens, Sociology (6th ed.), ch. 23: Nations, War and Terrorism</span><span>11 / 11</span></div>
+  <aside class="notes"><p>Fifteen terms from the chapter’s terrorism section, with short definitions based on Giddens’s usage.</p></aside>
+</section>
+
 </div>
 </main>
 
 <nav id="controls" aria-label="Slide controls">
   <button id="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-  <span id="count" aria-live="polite">1 / 5</span>
+  <span id="count" aria-live="polite">1 / 11</span>
   <button id="next" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
   <span class="sep"></span>
   <button id="btn-overview" aria-label="All slides (O)" aria-pressed="false" title="All slides (O)"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7.5" height="7" rx="1.5"/><rect x="13.5" y="4" width="7.5" height="7" rx="1.5"/><rect x="3" y="13" width="7.5" height="7" rx="1.5"/><rect x="13.5" y="13" width="7.5" height="7" rx="1.5"/></svg></button>
